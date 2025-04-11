@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Instituto de Belleza Profesional que ofrece cursos de dermatología, maquillaje, depilación, manicura y más en diferentes ciudades de España.">
+    <title>Instituto Superior de Belleza</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula tu archivo CSS -->
+</head>
+<body>
+
+    <!-- Encabezado y Navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros"> Nosotros</a></li>
+                <li><a href="#courses">Cursos</a></li>
+                <li><a href="#sedes">Sedes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio">
+        <div class="hero">
+            <h1>Instituto Superior de Belleza</h1>
+            <p>Impulsa tu carrera en el sector de la belleza y el bienestar con nuestros cursos prácticos <br> y programas técnicos en belleza integral, con titulos de validez nacional</p>
+            <a href="#courses" class="cta-button">Ver Cursos</a>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="nosotros">
+        <h2>¿Quiénes somos?</h2>
+        <p>En el Instituto de Belleza Profesional, te ofrecemos formación en distintas disciplinas de belleza, impartida por expertos con años de experiencia. Nuestros cursos están diseñados para que puedas aprender de manera práctica y profesional.</p>
+        <p>Contamos con presencia en diversas ciudades de la provincia de Corrientes, lo que te permite formarte en la ciudad que más te convenga.</p>
+    </section>
+
+    <!-- Sección de Cursos -->
+    <section id="courses">
+        <h2>Nuestros Cursos</h2>
+        <div class="course-list">
+            <div class="course">
+                <h3>Maquillador Profesional</h3>
+                <p>Domina el maquillaje social para novias, fiestas, y cualquier tipo de evento personal.</p>
+                <a href="#contact" class="cta-button">Inscribirse</a>
+            </div>
+            <div class="course">
+                <h3>Manicuría Profesional</h3>
+                <p>Conviértete en un experto en manicura, desde el cuidado de las uñas hasta la aplicación de esmaltes y diseños creativos.</p>
+                <a href="#contact" class="cta-button">Inscribirse</a>
+            </div>
+            <div class="course">
+                <h3>Máster en cejas y pestañas</h3>
+                <p>Aprende a diseñar y modelar cejas de manera profesional, incluyendo depilación, diseño y maquillaje de cejas.</p>
+                <a href="#contact" class="cta-button">Inscribirse</a>
+            </div>
+            <div class="course">
+                <h3>Peluquería Profesional y Técnico colorista</h3>
+                <p>Aprenderás las técnicas avanzadas de corte, estilismo y coloración, adquiriendo habilidades para transformar el cabello y crear looks personalizados con un enfoque artístico y profesional.</p>
+                <a href="#contact" class="cta-button">Inscribirse</a>
+            </div>
+            <div class="course">
+                <h3>Cosmetología con aparatología</h3>
+                <p>Aprenderás a dominar tratamientos faciales y corporales, combinando técnicas manuales y el uso de aparatología avanzada para ofrecer soluciones de belleza y bienestar personalizadas.</p>
+                <a href="#contact" class="cta-button">Inscribirse</a>
+            </div>
+            <div class="course">
+                <h3>Dermatología Estética</h3>
+                <p>Aprende los fundamentos de la dermatología y cómo aplicar tratamientos estéticos para cuidar la piel de tus clientes.</p>
+                <a href="#contact" class="cta-button">Inscribirse</a>
+            </div>
+            <div class="course">
+                <h3>Depilación Profesional</h3>
+                <p> Este curso tiene como objetivo brindarle a la futura profesional los conocimientos necesarios para un desempeño de calidad, tanto en la atención al público como en metodología indicada para lograr la eficacia en una sesión depilatoria.</p>
+                <a href="#contact" class="cta-button">Inscribirse</a>
+            </div>
+            <div class="course">
+                <h3>Estilismo y Colorimetría</h3>
+                <p> Aprenderás a diseñar cualquier tipo de corte, geometría del corte, a dominar la colorimetría desde cero, mezclas, fórmulas de tintes y decolorantes, a elegir tonos correctos y combinarlos.</p>
+                <a href="#contact" class="cta-button">Inscribirse</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Ciudades -->
+    <section id="sedes">
+        <h2>Ciudades donde ofrecemos nuestros cursos</h2>
+        <div class="cities-list">
+            <div class="city">
+                <h3>Córdoba</h3>
+                <a href="https://maps.app.goo.gl/bffSbBFgYWLwQF5F7">Dirección</a>
+            </div>
+            <div class="city">
+                <h3>Mendoza</h3>
+                <a href="https://maps.app.goo.gl/txasmeDQuoUkc4jr6">Dirección</a>
+            </div>
+            <div class="city">
+                <h3>Buenos Aires</h3>
+                <a href="https://maps.app.goo.gl/co9AU3SeHupBoMUdA">Dirección</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Si deseas más información o inscribirte en alguno de nuestros cursos, completa el formulario de contacto a continuación.</p>
+        <form action="enviar_formulario.php" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2025 Instituto Superior de Belleza. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

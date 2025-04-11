@@ -1,0 +1,281 @@
+/* Estilo general de la página */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* Fondo de la página */
+    color: #333; /* Color de texto */
+}
+
+/* Header / Navegación */
+header {
+    background-color: black; /* Fondo oscuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff00bb; /* Color azul al pasar el ratón */
+}
+
+/* Sección de Hero (Inicio) */
+#inicio {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    overflow: hidden;
+    background-color: black; /* Fondo base negro */
+}
+
+#inicio::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("https://img.freepik.com/foto-gratis/arreglo-vista-superior-pinceles-maquillaje-sombras-ojos_23-2148301855.jpg?t=st=1744134111~exp=1744137711~hmac=327582c7ab4eab723e6bf59abee52c255ee823903f8c6d6c3d3390b599184fa8&w=2000");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(4px); /* Difumina */
+    opacity: 0.2; /* Apenas visible */
+    z-index: 0;
+}
+
+#inicio > * {
+    position: relative;
+    z-index: 1; /* El contenido va encima del fondo */
+}
+
+
+#inicio h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 30px;
+}
+
+#inicio p {
+    font-size: 1.1rem;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #E53888; /* Botón naranja */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #AC1754; /* Cambio de color al pasar el ratón */
+}
+
+
+/* Sección Acerca de Nosotros */
+#nosotros {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+#nosotros h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+#nosotros p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sección de Servicios */
+
+#courses {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  
+  .course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .course {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #courses h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .course:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .course h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+    
+  }
+  
+  .course p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .city {
+    padding: 10px;
+  }
+
+  
+#sedes {
+    padding: 60px 20px;
+    text-align: center;
+    background-color:white;
+}
+
+/* Sección de Contacto */
+#contacto {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contacto h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 1.1rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 40px;
+    width: ;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 auto;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #e64a19;
+}
+
+/* Responsividad para móviles */
+@media screen and (max-width: 768px) {
+    .course-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courses {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #inicio h1 {
+        font-size: 3rem;
+    }
+
+    .cta-button {
+        font-size: 1.1rem;
+    }
+
+    #nosotros p,
+    #courses h3,
+    #contacto h2 {
+        font-size: 1.2rem;
+    }
+}
